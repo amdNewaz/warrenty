@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "d5821855-3cf9-4e02-8e5e-ad50b078addf",
+		"name": "warrenty_buyer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "warrenty_admin",
+			"item": [
+				{
+					"name": "localhost:9000/userlogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"amdnewaz@gmail.com\",\r\n    \"password\": \"blabla\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/stafflogin",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"stafflogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/addstaff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"staff@email.com\",\r\n    \"phone\" : \"+123\",\r\n    \"gender\" : \"male\",\r\n    \"name\" : \"staffdemo\",\r\n    \"date\" : \"19-20-2000\",\r\n    \"password\" : \"0531\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/addstaff",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"addstaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/staffProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\" :\"+8801825233902\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/step2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"step2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/editStaff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staffDP",
+									"type": "file",
+									"src": "/C:/Users/alamn/OneDrive/Desktop/staff.png"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "muktavai@mukta.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mukta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:9000/editStaff",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"editStaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/editStaff",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staffDP",
+									"type": "file",
+									"src": "/C:/Users/alamn/OneDrive/Desktop/staff.png"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "muktavai@mukta.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mukta",
+									"type": "text"
+								},
+								{
+									"key": "staff_id",
+									"value": "Skl3qtmm9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:9000/editStaff",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"editStaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/editUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "buyerDP",
+									"type": "file",
+									"src": "/C:/Users/alamn/OneDrive/Desktop/buyer.png"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "muktavai@mukta.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mukta",
+									"type": "text"
+								},
+								{
+									"key": "buyer_id",
+									"value": "Bkmagh515",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:9000/editUser",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"editUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9000/addEquipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_name\": \"OnePLUS\",\r\n    \"model_number\" :\"One Plus7PRO\",\r\n    \"warrenty_length\": \"75\",\r\n    \"sub_warrenty\" : {\r\n        \"parts\" : \"001\",\r\n        \"name \" : \"eaarphone\",\r\n        \"warrenty_length\" : \"45\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/addEquipment",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"addEquipment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:9000/userlogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"+601162098849\",\r\n    \"password\": \"0531\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/userlogin",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/stafflogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"amdnewaz@gmail.com\",\r\n    \"password\": \"blabla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/stafflogin",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"stafflogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/adduser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"user@email.com\",\r\n    \"phone\" : \"+123\",\r\n    \"gender\" : \"male\",\r\n    \"name\" : \"userdemo\",\r\n    \"date\" : \"19-20-2000\",\r\n    \"password\" : \"0531\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/adduser",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
